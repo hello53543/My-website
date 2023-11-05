@@ -1,0 +1,307 @@
+/* Gemeinsame Stile */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7; /* Hintergrundfarbe für die gesamte Seite */
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; /* Zentrierung des Inhalts */
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2em;
+  padding: 20px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.7s;
+}
+
+img:hover {
+  transform: scale(1.2, 1.2);
+}
+
+header {
+  background-color: #333; /* Hintergrundfarbe für den Header setzen */
+  width: 100%;
+  padding: 10px 0;
+}
+
+.links_seiten {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+
+.links_seiten li {
+  float: left;
+}
+
+.links_seiten li a {
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 12px;
+  transition: background-color 0.3s;
+}
+
+.links_seiten li a:hover {
+  background-color: #111;
+}
+
+#language-dropdown {
+  display: flex;
+  justify-content: right;
+  margin-right: 5em;
+  color: beige;
+}
+
+#language-select {
+  cursor: pointer;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-logo img {
+  max-width: 100px;
+  height: auto;
+}
+
+.footer-links ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin: 10px 0;
+}
+
+.footer-links ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-social a {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.footer-bottom {
+  background-color: #222;
+  padding: 10px 0;
+}
+
+.container .wrapper {
+  margin-top: 2em;
+  border-radius: 10px;
+  padding: 40px;
+}
+
+/* Kontaktseite spezifische Stile */
+.title-contact {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Stil für das Titel-Abteil mit den Links */
+.title-links {
+  background-color: transparent; /* Hintergrundfarbe auf transparent setzen */
+  padding: 0; /* Padding entfernen */
+  text-align: center;
+}
+
+.title-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 20px;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.title-links a:hover {
+  color: #007bff;
+}
+
+
+.contact-card {
+  max-width: 800px; /* Maximale Breite für die Kontaktinformationen-Karte */
+  width: 100%;
+  background-color: #fff;
+  border: 2px solid #e0e0e0;
+  padding: 20px;
+  margin-top: 15em;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Zentrierung horizontal */
+}
+
+.contact-info {
+  text-align: center; /* Zentrierung des Textes in der Kontaktinformationen-Karte */
+}
+
+.contact-info h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.contact-info p {
+  font-size: 18px;
+  margin: 5px 0;
+  color: #666;
+}
+
+.contact-info a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.contact-form {
+  flex: 1;
+  padding: 20px;
+  border-left: 2px solid #e0e0e0;
+}
+
+.contact-form h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333; /* Farbe für Überschriften */
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 10px;
+  color: #666; /* Farbe für Label */
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+
+
+/*Stile für kleinere Bildschirme(Handys)*/
+@media (max-width: 600px) {
+  .links_seiten {
+    background-color: #444;
+  }
+
+  header {
+    padding: 10px 0;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-logo {
+    margin-bottom: 20px;
+  }
+
+  .footer-links {
+    text-align: center;
+  }
+
+  .footer-links ul li {
+    margin: 5px 0;
+  }
+
+  .footer-social {
+    margin-top: 20px;
+  }
+
+  .container {
+    min-height: 100%;
+  }
+
+  .footer-social {
+    width: 60px;
+  }
+}
+
+/* Stile für mittelgroße Bildschirme (Tablets) */
+@media (min-width: 601px) and (max-width: 1280px) {
+  header {
+    padding: 20px 0;
+  }
+
+  .container {
+    min-height: 100%;
+  }
+
+  .footer-social {
+    width: 60px;
+  }
+}
+
+/* Stile für große Bildschirme (Desktops) */
+@media (min-width: 1281px) {
+  .links_seiten {
+    background-color: #333;
+  }
+
+  header {
+    padding: 20px 0;
+  }
+
+  .footer-social {
+    width: 60px;
+  }
+}
