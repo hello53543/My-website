@@ -99,7 +99,6 @@ function updateContent(language) {
   document.getElementById("hobby2").textContent = translation.hobby2;
   document.getElementById("hobby3").textContent = translation.hobby3;
   document.getElementById("hobby4").textContent = translation.hobby4;
-  document.getElementById("hobby5").textContent = translation.hobby5;
 
   // Übersetzung für Links
   document.getElementById("homepage").textContent = translation.homepage;
